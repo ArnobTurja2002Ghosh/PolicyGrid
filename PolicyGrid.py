@@ -4,10 +4,6 @@
 Used to compute Dynamic Programming (DP) policy evaluation and policy iteration 
 within a grid world where the only movements possible are up, down and right.
 
-STUDENTS: Your job is to fill in the code for the following functions below.
-    evaluate_policy()
-    policy_improvement()
-    policy_iteration()
 """
 
 import matplotlib.pyplot as plt
@@ -139,7 +135,7 @@ class PolicyGrid:
                         self.values[j][k] = self.rewards[j][k]+self.gamma *old_values[self.future_state(j, k, self.policy_y_array[j][k], self.policy_x_array[j][k])[0]][self.future_state(j, k, self.policy_y_array[j][k], self.policy_x_array[j][k])[1]]
                 print(self.values[j])
         ################################################################
-        # STUDENTS: Remove the following line and provide an implementation
+        # an implementation
         # for DP policy evaluation.  The idea is to evaluate the current policy
         # which exists in self.policy_y_array and self.policy_x_array.
         
@@ -158,7 +154,7 @@ class PolicyGrid:
                 self.policy_x_array[y][x] = [(-1, 0), (1, 0), (0, 1)][np.argmax(Q_values)][1]
         
         ################################################################
-        # STUDENTS: Remove the following line and provide an implementation
+        # an implementation
         # for DP policy improvement.
         pass
 
@@ -171,7 +167,7 @@ class PolicyGrid:
             if (old_policy_y_array == self.policy_y_array).all() and (old_policy_x_array == self.policy_x_array).all():
                 done = True
         ################################################################
-        # STUDENTS: Remove the following line and provide an implementation
+        # an implementation
         # for DP policy improvement.
         pass
 
