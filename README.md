@@ -1,6 +1,7 @@
 # PolicyGrid
 Consider a robot operating in the following environment which has 9 free spaces labelled purple:
-<img src= "docs/Screenshot 2025-03-18 201319.png" style="width: 50%;"/>
+
+<img src= "docs/Screenshot 2025-03-18 201319.png" style="width: 30%;"/>
 
 The set of possible actions from all states is {up, down, right} (left is not available).  
 In programming terms, \[(-1, 0), (1, 0), (0, 1)] is the set of possible actions from all states.
@@ -24,5 +25,5 @@ def future_state(self, y, x, dy, dx):
 Our model of this system is deterministic.  This means that the probabilities for all state transitions are either 0 or 1.
 
 Executing any action in state (3, 0) will result in a reward of +10.  Executing any action in any other state gives a reward of 0.
-<img src= "docs/Screenshot 2025-03-18 201343.png" style="width: 50%;"/>
+<img src= "docs/Screenshot 2025-03-18 201343.png" style="width: 30%;"/>
 
