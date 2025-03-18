@@ -25,5 +25,6 @@ def future_state(self, y, x, dy, dx):
 Our model of this system is deterministic.  This means that the probabilities for all state transitions are either 0 or 1.
 
 Executing any action in state (3, 0) will result in a reward of +10.  Executing any action in any other state gives a reward of 0.
+
 <img src= "docs/Screenshot 2025-03-18 201343.png" style="width: 30%;"/>
 
